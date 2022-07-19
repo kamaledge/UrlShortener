@@ -1,10 +1,9 @@
 1. Copy the entire repository to any file location in server with FTP Software.
-Eg. server1/home/NAF/NAFPyInputConnector
+   eg. server1/home/URLShortener/
 
 2. Install all the python library dependencies.
 
-make install
-
+   make install
 
 
 3. To start the connector run the below command:
@@ -19,11 +18,12 @@ abc> make status
 
 abc> make stop
 
-11. Installation steps on windows:
 
-On windows the NAF input connector is supported only in DEVELOPMENT Mode.
+6. Installation steps on windows:
 
-Below are the alternatives for steps 2, 7 and 9 mentioned above to run the service.
+On windows the UrlShortener is supported only in DEVELOPMENT Mode.
+
+Below are the alternatives for steps 2, 3 and 5 mentioned above to run the service.
 
     2-ALT: pip install -r requirements.txt
     7-ALT: python app.py (This starts the service on port 5000)
