@@ -10,7 +10,7 @@ install:
 
 start:
 	@echo "Starting NAF Python connector at port: $(URL_PY_PORT)"
-	@nohup sh -c "gunicorn --bind 0.0.0.0:$(URL_PY_PORT) --workers $(URL_GUNICORN_WORKERS) --threads $(URL_GUNICORN_THREADS) --timeout 1200 app_ui:app_ui>>/tmp/url_python_gunicorn.log 2>&1" &
+	@nohup sh -c "gunicorn --bind 0.0.0.0:$(URL_PY_PORT) --workers $(URL_GUNICORN_WORKERS) --threads $(URL_GUNICORN_THREADS) --timeout 1200 app_ui:url_app_ui>>/tmp/url_python_gunicorn.log 2>&1" &
 
 status:
 	@ps -ef | grep "gunicorn --bind 0.0.0.0:$(URL_PY_PORT)"
